@@ -1,5 +1,6 @@
 # lesson-9-recursion
 // Найти сумму элементов от M до N, N и M заданы
+
 int SumRec(int n, int m)
 {
     if (n == 0) return 0;
@@ -8,6 +9,7 @@ int SumRec(int n, int m)
 Console.WriteLine(SumRec(9, 1));
 
 // Показать натуральные числа от M до N, N и M заданы
+
 string NumbersRec(int n, int m)
 {
     if (n <= m) return NumbersRec(n + 1, m) + $"{n}";
@@ -41,6 +43,7 @@ int Akk(int n, int m)
 Console.WriteLine(Akk(2, 1));
 
 // Написать программу возведения числа А в целую стень B
+
 Console.Write("Введите A: ");
 int A = int.Parse(Console.ReadLine());
 Console.Write("Введите B: ");
@@ -59,6 +62,7 @@ Console.WriteLine($" {result}");
 
 // Написать программу показывающие первые N чисел, для которых каждое следующее равно сумме двух предыдущих. 
 //Первые два элемента последовательности задаются пользователем
+
 int GetNumber(string message)
 {
     Console.Write(message);
